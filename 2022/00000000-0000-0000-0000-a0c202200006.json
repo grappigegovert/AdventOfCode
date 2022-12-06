@@ -1,0 +1,266 @@
+{
+  "Data": {
+    "Objectives": [
+      {
+        "Id": "27ac57b0-6d2a-4e30-aa61-52dc4468b4c8",
+        "Category": "secondary",
+        "Type": "statemachine",
+        "HUDTemplate": {
+          "display": "Kill an NPC for your solution"
+        },
+        "Definition": {
+          "ContextListeners": {
+            "triggerValue": {
+              "type": "custom",
+              "HUDTemplate": {
+                "display": {
+                  "$loc": {
+                    "key": "UQIQMBE",
+                    "data": [
+                      "$.formatstr"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "Context": {
+            "formatstr": "$formatstring The answer to part 1 is {$.packetMarkerEndIndex,.0f}. The answer to part 2 is {$.messageMarkerEndIndex,.0f}",
+            "triggerValue": 0,
+            "input": [
+              "r","q","w","q","t","w","w","r","m","r","q","q","r","c","r","t","r","p","p","p","j","r","j","g","r","g","j","g","q","g","t","t","g","b","b","h","p","p","f","t","p","f","p","d","p","m","p","s","s","t","f","f","q","v","f","q","v","v","d","j","j","p","l","l","l","t","q","l","t","q","t","r","r","z","l","l","l","b","l","d","b","d","s","d","q","q","g","p","q","g","g","z","c","c","g","b","g","n","n","m","j","m","l","j","m","l","j","l","d","j","l","d","j","j","l","n","n","h","n","d","h","d","m","m","s","l","m","s","l","m","l","h","m","m","n","t","n","r","t","n","r","n","b","r","b","q","r","q","h","q","f","f","t","w","f","t","f","s","f","z","f","c","f","r","r","z","l","l","c","h","c","w","w","t","w","s","t","w","w","j","w","r","j","j","f","w","w","g","z","w","z","q","z","p","z","h","z","q","h","q","b","h","q","h","s","s","l","t","s","s","z","h","s","s","z","d","s","s","r","w","s","s","d","p","p","j","c","p","j","j","r","w","j","w","n","w","j","n","n","z","j","j","h","s","j","h","s","j","s","j","v","v","t","f","f","f","f","q","f","f","l","g","l","w","g","l","g","b","g","p","b","g","b","g","g","h","f","g","h","f","h","d","f","h","d","f","h","f","s","s","q","p","p","v","l","v","s","l","l","t","w","w","h","w","v","w","p","w","g","g","g","n","p","n","n","m","q","n","n","t","q","n","n","l","h","h","d","b","h","d","b","b","t","v","v","c","r","r","c","g","r","r","d","r","v","r","j","v","v","l","m","l","n","m","n","d","n","m","n","r","n","c","n","z","n","s","n","s","q","n","s","s","w","r","w","z","w","m","w","z","z","b","p","b","h","p","h","q","h","p","q","p","b","p","q","p","j","p","j","v","p","v","w","p","v","w","p","p","d","v","d","h","d","c","c","q","b","c","c","f","n","c","c","t","r","c","r","j","c","j","j","d","s","d","h","d","n","h","h","w","p","w","l","w","w","b","m","b","h","m","b","h","h","p","z","h","h","c","c","v","f","f","q","q","n","s","q","q","m","n","n","s","p","n","n","p","f","p","z","p","p","s","p","g","s","p","p","g","b","b","d","w","b","b","d","c","c","h","f","h","g","f","h","f","l","l","l","j","t","l","l","n","j","l","n","l","d","d","v","c","d","v","d","q","v","v","q","w","q","p","p","p","r","t","p","t","h","t","t","h","q","q","f","b","q","q","p","f","p","z","f","p","f","c","f","s","s","c","r","s","c","c","b","g","b","n","g","b","b","g","d","b","b","p","g","p","q","q","l","m","q","l","m","m","g","f","f","q","q","q","s","b","q","b","t","b","l","b","w","b","q","q","v","b","q","v","b","q","v","v","n","z","v","z","p","v","v","q","h","v","q","q","t","l","t","p","t","l","l","b","f","l","b","f","l","b","f","l","l","t","d","d","l","b","l","f","l","v","f","v","b","f","f","m","s","f","f","h","l","h","s","h","m","m","g","b","b","g","j","j","d","n","d","q","q","m","q","l","l","z","j","z","v","v","h","j","h","n","h","c","n","c","h","h","z","n","n","h","h","p","p","w","q","p","w","p","f","f","w","v","w","z","z","p","p","w","p","f","w","f","t","w","t","n","n","q","b","n","q","n","r","n","r","z","z","n","f","f","z","z","b","l","z","l","v","z","l","z","r","r","s","z","s","c","s","q","c","s","s","b","g","g","c","g","v","v","d","d","s","t","t","g","q","q","g","w","g","c","c","l","z","z","s","z","d","d","l","v","d","d","v","b","d","d","r","l","r","c","l","l","r","b","l","r","r","h","l","l","d","z","d","t","d","c","c","q","l","l","s","b","l","s","s","z","l","s","z","z","d","l","l","h","j","l","j","h","h","h","z","h","f","f","d","w","f","d","w","f","d","d","w","d","t","d","r","t","d","t","n","t","d","d","l","d","s","l","l","q","f","f","d","v","d","h","d","p","d","h","d","r","d","p","r","p","r","r","h","g","g","d","q","g","g","h","g","g","m","w","g","m","g","h","h","c","h","l","h","m","l","l","r","n","r","d","r","c","r","q","c","c","b","q","q","f","b","q","b","c","c","j","p","j","h","h","v","p","p","c","w","p","w","f","f","m","m","z","z","f","q","f","l","f","j","f","d","f","b","f","q","q","t","m","t","h","m","t","t","w","f","t","w","w","p","m","p","z","p","l","z","z","p","v","v","g","p","p","s","b","p","b","c","c","b","t","c","b","c","d","d","z","b","z","w","w","m","s","s","c","r","c","c","t","g","t","g","j","g","t","j","t","h","h","j","z","z","c","q","q","m","m","m","v","c","c","w","j","c","w","j","w","z","z","w","n","n","w","g","w","t","g","w","w","b","s","b","v","b","c","c","r","s","c","c","c","n","g","g","f","j","f","w","f","j","f","r","f","s","f","d","d","n","c","d","n","c","n","d","n","q","q","w","z","z","m","s","s","b","d","s","b","s","w","s","w","d","d","d","p","d","q","d","b","d","d","c","v","c","m","m","w","w","s","s","r","t","r","r","l","d","d","n","d","m","d","t","m","t","d","m","t","t","w","w","m","s","m","f","f","w","q","w","v","w","b","w","h","b","b","q","f","q","q","g","c","q","c","m","c","t","c","t","n","t","j","n","t","n","b","n","r","b","r","m","b","b","q","t","q","c","c","q","b","c","b","v","b","n","b","q","n","n","g","h","g","b","b","m","f","m","w","m","d","w","m","d","m","p","m","w","p","p","d","w","p","d","w","w","n","z","w","n","w","r","n","w","r","n","n","t","q","n","t","t","c","m","c","q","q","b","r","q","r","t","t","s","j","t","s","t","c","s","c","p","c","s","p","s","n","s","w","s","g","g","r","h","g","g","j","r","j","j","b","h","h","b","n","b","m","m","d","l","m","d","d","t","q","d","t","d","r","d","w","w","j","v","j","g","j","j","d","h","j","d","d","d","b","w","w","s","f","f","l","p","p","b","w","b","c","b","p","b","j","j","z","q","z","n","n","r","w","n","n","v","m","v","j","v","w","v","q","q","r","l","l","j","g","j","m","j","j","q","h","j","h","w","j","h","w","j","j","s","v","s","n","v","v","l","w","l","q","q","j","p","j","j","b","s","j","j","c","d","d","t","f","t","h","f","f","r","q","f","r","q","r","f","q","f","r","f","l","l","f","z","z","q","l","l","z","t","l","t","n","l","t","n","t","p","t","t","q","m","m","g","w","m","w","w","w","j","j","d","r","j","r","z","r","l","r","w","l","w","z","z","z","z","p","h","p","p","h","v","p","h","v","p","h","v","p","v","d","v","f","d","f","l","l","j","g","g","l","r","l","r","q","l","r","r","f","p","f","q","p","q","n","p","q","p","m","m","b","l","b","f","l","b","f","b","p","f","p","w","p","j","w","p","j","p","b","j","p","j","m","j","l","j","b","l","l","d","b","l","l","n","r","n","j","j","j","l","j","r","l","r","c","r","r","g","z","g","b","b","z","r","z","n","z","z","h","n","z","h","h","t","m","h","m","q","h","m","q","q","n","z","z","v","f","z","v","z","f","f","t","j","f","t","f","v","v","p","m","v","p","p","w","z","z","h","n","z","h","z","v","v","w","z","w","w","q","c","w","c","t","w","w","g","r","r","t","g","g","l","g","n","g","s","g","v","g","w","v","w","p","v","p","b","b","r","v","r","v","w","r","v","w","v","b","w","w","p","s","p","r","r","r","c","b","b","p","q","p","p","f","j","j","j","q","n","j","n","d","n","m","d","d","v","s","v","l","s","l","m","m","w","w","d","w","c","c","h","m","m","r","j","m","j","w","w","s","r","w","r","h","w","w","p","c","g","m","p","m","v","b","d","m","l","m","q","b","n","b","l","b","b","g","t","m","t","g","q","s","l","n","v","c","n","m","w","r","f","l","r","n","w","h","q","z","r","s","n","w","h","n","c","w","d","v","b","c","p","j","r","q","s","s","c","w","z","r","j","v","s","l","h","s","c","p","v","m","q","j","n","l","t","w","h","s","h","j","m","b","h","g","t","t","b","z","l","l","r","v","p","n","h","g","d","m","w","t","d","d","b","w","m","p","g","b","h","r","n","d","p","g","w","z","f","v","q","d","m","p","c","v","h","l","n","j","n","q","b","w","q","m","s","h","g","w","h","m","f","j","g","s","b","s","c","s","j","t","f","b","f","v","m","l","l","j","q","w","w","j","t","n","l","t","b","z","j","p","c","q","d","f","m","d","l","d","v","m","s","n","m","z","q","m","g","h","c","v","h","l","p","j","z","z","s","z","c","p","v","l","d","r","f","l","b","c","p","p","z","w","g","p","p","f","p","b","s","l","p","l","r","q","w","g","b","f","w","p","w","b","t","b","n","r","m","b","r","r","r","p","q","n","d","z","v","h","m","l","h","v","t","l","n","j","v","h","d","r","h","h","v","m","w","z","j","n","t","s","g","f","f","j","s","d","p","d","l","h","n","l","s","l","n","b","m","b","s","m","d","s","v","p","m","p","b","j","p","j","c","w","h","b","p","f","n","h","b","m","t","t","f","g","l","g","l","n","n","h","h","c","q","v","b","p","v","n","r","w","c","s","z","w","j","s","d","h","q","w","c","t","r","p","g","s","r","c","b","f","p","z","h","b","n","r","b","l","l","r","l","f","l","q","d","l","g","z","w","p","w","g","w","w","v","m","b","s","p","p","b","c","j","c","d","l","t","b","g","w","f","n","d","q","j","l","v","n","d","h","t","c","l","f","m","w","n","q","r","b","f","v","v","q","d","z","s","p","f","c","s","l","p","l","h","t","m","s","q","q","t","r","c","d","v","b","h","f","s","c","v","n","m","z","p","l","c","g","l","w","n","z","b","v","g","f","l","c","l","c","l","q","m","d","g","f","z","j","q","q","r","r","m","p","c","q","r","z","g","q","c","n","z","b","m","n","c","m","v","d","z","r","m","m","v","f","q","r","r","q","z","q","b","j","m","j","g","j","w","m","f","b","n","m","m","g","v","m","z","s","g","j","j","s","p","j","q","b","v","f","h","r","d","v","l","l","g","q","s","f","f","j","n","f","q","d","t","h","j","b","j","w","h","w","q","d","q","h","s","n","c","t","w","g","b","s","z","v","r","s","b","w","b","p","p","t","c","j","j","v","f","t","n","h","d","m","w","m","h","t","j","r","j","r","l","r","d","r","q","j","z","n","h","q","f","t","g","t","l","d","n","p","b","r","l","p","r","j","m","p","l","m","w","d","b","z","q","p","m","w","w","v","c","q","c","c","j","l","h","q","b","h","c","j","p","r","v","r","f","m","m","f","m","l","j","w","m","b","r","l","h","c","g","l","t","h","g","b","m","r","f","m","b","p","s","z","t","f","c","g","l","p","z","l","f","b","p","j","h","m","v","c","m","v","r","p","r","m","v","m","r","v","v","g","b","b","l","l","z","s","c","h","w","s","h","h","f","b","n","m","g","w","r","b","h","l","q","v","s","d","j","d","m","m","b","t","j","z","t","h","w","s","s","g","h","t","q","v","h","t","q","c","s","w","d","h","b","w","h","p","h","h","s","r","w","h","w","w","t","s","l","w","v","r","h","p","g","q","f","m","f","t","n","r","t","q","p","w","f","q","q","d","g","f","t","d","l","q","f","n","d","j","l","z","h","v","l","r","t","h","n","q","d","q","r","z","p","p","r","d","g","w","w","q","l","p","l","r","m","q","t","d","q","g","b","d","n","t","m","j","c","j","h","l","b","b","m","c","t","v","n","n","h","t","p","p","f","b","j","p","s","b","m","n","d","b","d","p","l","q","l","f","q","f","h","z","q","v","t","q","c","v","m","p","r","w","b","h","d","t","j","r","q","r","q","v","m","c","s","s","q","n","f","q","w","t","c","h","m","j","f","j","l","p","w","s","g","h","p","l","b","t","h","d","n","b","h","f","b","h","h","p","h","d","m","l","m","t","j","c","v","m","z","j","b","n","q","b","f","l","d","r","v","l","m","j","f","n","n","r","l","s","n","w","r","t","n","r","p","f","q","d","h","c","h","l","t","m","b","v","j","z","h","g","j","w","z","b","l","q","d","t","h","m","f","f","z","t","q","v","z","z","f","s","z","m","d","q","d","z","l","f","p","b","f","g","j","f","d","j","q","s","c","r","h","v","j","f","l","b","l","l","n","l","g","h","n","c","c","z","r","l","p","c","b","w","p","n","m","z","c","n","q","h","b","f","n","l","m","n","b","q","v","m","w","v","b","c","h","w","h","l","f","c","s","s","c","t","s","d","c","w","m","t","f","d","g","b","h","l","j","w","p","r","f","n","c","d","g","w","l","g","z","z","m","v","f","q","r","d","s","m","l","w","b","r","m","b","m","t","z","q","q","d","q","d","p","z","v","t","b","s","t","s","c","g","l","r","w","d","p","n","d","n","s","t","r","h","g","j","c","h","n","p","z","s","v","c","j","n","g","m","z","s","d","d","w","s","b","l","l","p","v","q","q","z","z","j","l","m","s","b","n","c","b","n","d","q","m","q","p","h","z","q","z","c","n","g","j","z","p","f","n","j","m","s","v","n","g","t","c","v","h","h","j","s","s","s","r","n","h","j","r","s","m","v","b","s","r","d","j","c","r","p","p","v","g","s","q","b","q","j","z","b","r","h","j","q","l","g","m","q","f","c","l","b","r","d","h","w","w","j","d","l","s","j","n","m","j","c","j","r","m","s","s","t","n","g","s","w","r","h","m","d","q","t","h","p","r","c","b","r","n","d","f","p","d","j","g","p","q","t","f","m","m","f","v","b","z","t","q","d","h","z","h","z","b","z","h","j","j","p","f","g","n","v","r","m","s","p","d","v","m","h","f","v","b","v","z","t","m","l","r","h","f","q","f","d","c","f","n","z","z","n","d","l","f","l","d","p","f","h","r","b","j","r","w","l","w","n","p","r","d","m","q","j","w","p","p","b","r","d","j","h","p","b","v","n","r","v","j","l","r","b","w","d","w","t","t","z","h","q","q","g","c","c","l","b","w","g","h","b","g","r","h","c","v","w","j","r","r","c","h","q","g","z","z","t","r","j","g","r","l","t","c","p","d","s","c","j","d","f","c","p","h","n","d","f","z","d","q","s","b","p","s","j","r","l","j","d","n","f","l","f","v","r","z","c","r","j","f","l","d","d","f","g","p","v","n","p","m","d","q","b","h","z","w","b","f","r","p","z","s","n","p","b","c","b","g","f","c","h","v","v","m","q","p","n","f","p","v","v","d","v","h","f","n","p","b","f","z","w","m","b","n","l","p","q","z","g","r","p","w","t","s","j","b","p","z","d","r","s","f","m","n","f","q","w","q","v","p","g","n","r","j","h","m","v","m","p","h","l","f","d","p","f","h","d","j","l","j","l","z","f","t","d","z","d","v","h","j","r","v","j","d","c","t","w","f","r","c","t","g","l","w","m","r","t","d","l","r","v","m","h","c","q","v","f","v","p","g","m","s","t","g","h","c","z","m","v","c","l","p","t","z","s","p","d","s","r","l","v","r","g","v","j","t","v","f","l","h","s","m","q","s","w","d","p","q","j","r","r","n","h","g","r","g","g","z","m","c","p","q","s","c","t","q","b","h","p","q","r","s","b","s","t","w","z","g","z","g","h","q","g","l","t","c","p","b","r","h","b","c","d","q","l","h","f","j","h","l","c","r","n","h","r","p","j","d","z","l","z","q","q","p","r","v","z","n","t","b","j","z","t","q","g","d","q","q","t","t","m","b","p","b","c","f","b","j","m","d","j","q","s","f","l","b","c","z","m","f","n","s","j","d","z","c","n","n","m","j","j","l","l","h","v","w","b","w","l","g","r","l","p","v","b","f","f","w","j","v","c","t","w","n","r","s","f","q","d","n","w","n","t","s","c","p","s","j","n","s","h","h","d","m","c","q","m","c","p","s","c","r","m","z","l","t","l","d","w","l","m","f","n","b","h","b","t","p","r","s","g","t","s","b","v","z","f","r","s","f","p","v","m","q","j","z","j","q","q","h","w","d","j","j","z","v","b","h","r","v","t","b","s","c","r","c","p","z","r","q","s","b","g","f","b","p","w","q","f","m","b","s","r","l","h","h","t","n","t","j","m","t","r","t","l","w","q","s","d","b","m","g","t","d","l","r","w","f","d","n","m","w","w","z","l","l","t","b","r","j","g","g","h","b","s","t","b","n","f","f","z","m","z","z","d","l","c","d","g","v","m","r","z","s","j","n","q","j","v","c","z","m","h","r","g","w","b","r","b","l","r","q","f","m","z","b","b","c","n","f","s","b","f","p","g","j","s","m","p","t","z","b","c","l","f","d","n","w","f","g","b","z","l","p","b","g","q","r","d","h","d","m","f","j","d","n","l","z","c","z","d","p","v","t","b","z","d","m","r","t","h","s","l","n","g","b","r","l","d","l","l","f","c","j","p","l","h","g","l","m","w","s","f","p","q","j","n","r","g","p","g","q","f","m","b","b","w","c","h","b","r","q","q","s","n","c","f","w","n","m","g","d","m","t","c","h","d","h","l","z","z","q","j","v","t","v","t","v","g","q","b","t","w","v","w","p","s","j","q","w","d","q","h","r","l","f","m","d","g","d","z","c","h","v","f","b","c","m","q","j","l","l","p","j","t","n","p","h","w","q","v","f","w","p","c","j","m","z","q","h","s","b","w","l","c","m","b","s","g","t","h","t","h","r","s","j","t","n","z","l","s","r","c","p","t","g","t","r","f","c","w","p","t","b","s","t","c","s","d","z","b","w","j","l","j","z","j","z","t","z","b","q","s","j","d","v","w","g","l","p","b","p","g","d","j","t","t","h","j","j","m","s","n","l","j","l","t","g","l","q","c","s","z","b","z","q","m","b","l","f","p","n","c","n","t","j","z","z","h","m","j","f","f","l","d","c","r","c","v","j","j","s","w","v","z","l","f","f","f","r","m","s","g","j","t","p","z","g","g","t","l","p","f","w","p","w","b","m","h","m","g","g","p","n","m","z","w","r","g","d","j","r","h","g","l","n","h","f","d","c","j","d","f","j","t","d","j","v","r","n","l","g","q","t","f","q","m","p","g","j","c","v","c","m","n","w","h","h","b","c","z","w","w","n","t","f","b","m","g","s","s","g","l","n","g","q","l","t","t","f","p","c","z","n","s","w","v","m","b","p","r","s","r","z","l","j","t","l","w","l","l","j","n","b","b","r","n","w","d","v","v","l","s","b","d","v"
+            ],
+            "placeholderArray": [1],
+            "firstLetter": "",
+            "secondLetter": "",
+            "thirdLetter": "",
+            "fourthLetter": "",
+            "inputIndex": 0,
+            "packetMarkerEndIndex": -1,
+            "messageMarkerEndIndex": -1,
+            "charactersSinceLastDuplicate": [],
+            "uniqueConsecutiveCharactersCount": 0,
+            "tempArray": [],
+            "duplicateFound": false,
+            "uniquesIndex": 0
+          },
+          "States": {
+            "Start": {
+              "Kill": {
+                "Transition": "PartTwo"
+              }
+            },
+            "OldPartOneSolution": {
+              "-": {
+                "Actions": [
+                  {
+                    "$select": {
+                      "in": "$.input",
+                      "?": {
+                        "$eq": ["$.packetMarkerEndIndex", -1]
+                      },
+                      "!": [
+                        {
+                          "$inc": "inputIndex"
+                        },
+                        {
+                          "$set": ["fourthLetter", "$.thirdLetter"]
+                        },
+                        {
+                          "$set": ["thirdLetter", "$.secondLetter"]
+                        },
+                        {
+                          "$set": ["secondLetter", "$.firstLetter"]
+                        },
+                        {
+                          "$set": ["firstLetter", "$.#"]
+                        },
+                        {
+                          "$select": {
+                            "in": "$.placeholderArray",
+                            "?": {
+                              "$and": [
+                                {
+                                  "$not": { "$eq": ["$.fourthLetter", ""] }
+                                },
+                                {
+                                  "$not": { "$eq": ["$.fourthLetter", "$.thirdLetter"] }
+                                },
+                                {
+                                  "$not": { "$eq": ["$.fourthLetter", "$.secondLetter"] }
+                                },
+                                {
+                                  "$not": { "$eq": ["$.fourthLetter", "$.firstLetter"] }
+                                },
+                                {
+                                  "$not": { "$eq": ["$.thirdLetter", "$.secondLetter"] }
+                                },
+                                {
+                                  "$not": { "$eq": ["$.thirdLetter", "$.firstLetter"] }
+                                },
+                                {
+                                  "$not": { "$eq": ["$.secondLetter", "$.firstLetter"] }
+                                }
+                              ]
+                            },
+                            "!": [{
+                              "$set": [ "packetMarkerEndIndex", "$.inputIndex" ]
+                            }]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "Transition": "End"
+              }
+            },
+            "PartTwo": {
+              "-": {
+                "Actions": [
+                  {
+                    "$select": {
+                      "in": "$.input",
+                      "?": {
+                        "$eq": ["$.messageMarkerEndIndex", -1]
+                      },
+                      "!": [
+                        {
+                          "$inc": "inputIndex"
+                        },
+                        {
+                          "$reset": "duplicateFound"
+                        },
+                        {
+                          "$reset": "uniquesIndex"
+                        },
+                        {
+                          "$reset": "tempArray"
+                        },
+                        {
+                          "$select": {
+                            "in": "$.charactersSinceLastDuplicate",
+                            "?": {
+                              "$eq": [1, 1]
+                            },
+                            "!": [
+                              {
+                                "$inc": "uniquesIndex"
+                              },
+                              {
+                                "$push": ["tempArray", "$.##"]
+                              },
+                              {
+                                "$select": {
+                                  "in": "$.placeholderArray",
+                                  "?": {
+                                    "$eq": ["$.#", "$.##"]
+                                  },
+                                  "!": [
+                                    {
+                                      "$set": ["duplicateFound", true]
+                                    },
+                                    {
+                                      "$dec": ["uniqueConsecutiveCharactersCount", "$.uniquesIndex"]
+                                    },
+                                    {
+                                      "$reset": "tempArray"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "$set": ["charactersSinceLastDuplicate", "$.tempArray"]
+                        },
+                        {
+                          "$push": ["charactersSinceLastDuplicate", "$.#"]
+                        },
+                        {
+                          "$inc": "uniqueConsecutiveCharactersCount"
+                        },
+                        {
+                          "$select": {
+                            "in": "$.placeholderArray",
+                            "?": {
+                              "$eq": ["$.duplicateFound", false]
+                            },
+                            "!": [
+                              {
+                                "$select": {
+                                  "in": "$.placeholderArray",
+                                  "?": {
+                                    "$and": [
+                                      {
+                                        "$eq": ["$.packetMarkerEndIndex", -1]
+                                      },
+                                      {
+                                        "$eq": ["$.uniqueConsecutiveCharactersCount", 4]
+                                      }
+                                    ]
+                                  },
+                                  "!": [{
+                                    "$set": ["packetMarkerEndIndex", "$.inputIndex"]
+                                  }]
+                                }
+                              },
+                              {
+                                "$select": {
+                                  "in": "$.placeholderArray",
+                                  "?": {
+                                    "$and": [
+                                      {
+                                        "$eq": ["$.messageMarkerEndIndex", -1]
+                                      },
+                                      {
+                                        "$eq": ["$.uniqueConsecutiveCharactersCount", 14]
+                                      }
+                                    ]
+                                  },
+                                  "!": [{
+                                    "$set": ["messageMarkerEndIndex", "$.inputIndex"]
+                                  }]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "Transition": "End"
+              }
+            },
+            "End": {
+              "-": {
+                "$inc": "triggerValue",
+                "Transition": "Success"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "GameChangers": [],
+    "Bricks": []
+  },
+  "Metadata": {
+    "Title": "Advent of Code 2022 - 06",
+    "Description": "Good evening, 47. Kill any NPC to get your solution for the sixth coding puzzle.",
+    "ScenePath": "assembly:/_PRO/Scenes/Missions/Paris/_scene_paris.entity",
+    "Location": "LOCATION_PARIS",
+    "IsPublished": true,
+    "CreatorUserId": "892607e3-0dce-49e8-9eb4-a2f03d0f3a7c",
+    "GameVersion": "7.17.0.0",
+    "ServerVersion": "7.17.6.0",
+    "Type": "usercreated",
+    "Id": "00000000-0000-0000-0000-a0c202200006",
+    "PublicId": "102120297566",
+    "TileImage": "$($repository c97620fa-711b-4cf0-97a2-a262f24dccdb).Image",
+    "CreationTimestamp": "2020-11-02T23:12:02.5333333Z"
+  },
+  "UserData": {}
+}
