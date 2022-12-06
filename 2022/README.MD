@@ -9,3 +9,6 @@ The usual method to create custom contracts, through the in-game contract creati
 The contract system is capable of much more complex objectives, but those can only be used in the game through installing mods that alter the game files, or connecting to a custom server such as [LocalGhost](https://gitlab.com/grappigegovert/localghost) or [Peacock](https://github.com/thepeacockproject/Peacock).
 
 I have tested these contracts with Hitman 2, connected to a local LocalGhost instance.
+
+### **Note**
+I've taken the liberty to rewrite the inputs for the puzzles as arrays, as there is no way to do string manipulation within a hitman contract (as far as I know). I have left my personal inputs in the solutions, both because they have to be hardcoded anyways, and so it's obvious how I have rewritten them.
